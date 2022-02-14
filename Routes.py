@@ -14,7 +14,7 @@ port = quote_plus(os.getenv('port'))
 database = quote_plus(os.getenv('database'))
 app = Flask(__name__)
 CORS(app, ressources={})
-app.config['SQLALCHEMY_DATABASE_URI'] = "{}://{}:{}@{}:{}/{}".format(dialect, user, mot_de_passe, host, port, database)
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://uauvkemigerxxc:08f65899df3f6dc71b3a5a51ee0bc0c27acbce2c6f5d5cb1fbfd8d6b88dcb7fe@ec2-72-44-41-8.compute-1.amazonaws.com:5432/d7gg5kbq0bk9id"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
