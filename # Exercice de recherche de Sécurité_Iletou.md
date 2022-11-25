@@ -49,6 +49,8 @@ selon la norme ITSEC, la securité est définie comme l'ensemble des règles et 
 
 ## Les attaques qui se rapportent aux bases de données
 - Injection SQL
+- Déni de service
+- Usurpation d'identité
 
 
 
