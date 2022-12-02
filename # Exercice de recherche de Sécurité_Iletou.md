@@ -52,6 +52,30 @@ selon la norme ITSEC, la securité est définie comme l'ensemble des règles et 
 - Déni de service
 - Usurpation d'identité
 
+# suite de l'exercice de securité
+## La norme SQL actuelle
+SQL:2011 ou ISO/CEI 9075:2011 (sous le nom "Information technology – Database languages – SQL") est la septième révision de la norme du Langage de requête de Base de données SQL par l'ISO (1987) et l'ANSI (1986). Il remplace la version précédente, SQL:2008, et a été officiellement adoptée le 15 décembre 2011.
+## L'option par defaut de revoke est Cascade
+## L'option par defaut de grant est " With Grant option"
+# les droits en Postgres sont :
+
+|Type d'objet|	Tous les privilèges|	Privilèges par défaut pour PUBLIC|	Commande psql|
+|DATABASE|	CTc|	Tc|	\l|
+|DOMAIN|	U|	U|	\dD+|
+|FUNCTION ou PROCEDURE|	X|	X|	\df+|
+|FOREIGN DATA WRAPPER|	U|	aucun|	\dew+|
+|FOREIGN SERVER|	U|	aucun|	\des+|
+|LANGUAGE|	U|	U|	\dL+|
+LARGE OBJECT|	rw|	aucun|	 
+|SCHEMA| UC|	aucun|	\dn+|
+|SEQUENCE|	rwU|	aucun|	\dp|
+|TABLE (et objets similaires)|	arwdDxt|	aucun|	\dp|
+|Colonne de table|	arwx|	aucun|	\dp|
+|TABLESPACE|	C|	aucun|	\db+|
+|TYPE|	U|	U|	\dT+|
+
+
+
 
 
 
